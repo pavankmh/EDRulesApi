@@ -1,0 +1,19 @@
+server:
+  port: 8050
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: pavan@123
+    url: jdbc:oracle:thin:@localhost:1521/SYSTEM
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
